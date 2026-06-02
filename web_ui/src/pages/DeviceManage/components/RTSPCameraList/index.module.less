@@ -1,0 +1,47 @@
+/**
+ * Copyright (C) 2025 Xiaomi Corporation
+ * This software may be used and distributed according to the terms of the Xiaomi Miloco License Agreement.
+ */
+
+.container {
+  padding: 16px 0;
+}
+
+.header {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cameraGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 16px;
+}
+
+.loadingText {
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+.emptyContainer {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .cameraGrid {
+    grid-template-columns: 1fr;
+  }
+}
